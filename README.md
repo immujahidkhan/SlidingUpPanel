@@ -29,7 +29,8 @@ dependencies {
     repositories {
         mavenCentral()
     }
-    compile 'com.slidinguppanel:library:3.4.0'
+     implementation 'com.github.immujahidkhan:SlidingUpPanel:0.0.1'
+
 }
 ```
 
