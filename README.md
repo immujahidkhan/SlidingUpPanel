@@ -34,6 +34,17 @@ dependencies {
 }
 ```
 
+```
+@Override
+    public void onBackPressed() {
+        if (mLayout != null && (mLayout.getPanelState() == SlidingUpPanelLayout.PanelState.EXPANDED || mLayout.getPanelState() == SlidingUpPanelLayout.PanelState.ANCHORED)) {
+            mLayout.setPanelState(SlidingUpPanelLayout.PanelState.COLLAPSED);
+        } else {
+            super.onBackPressed();
+        }
+    }
+```
+
 ### Usage
 
 * Include `com.slidinguppanel.SlidingUpPanelLayout` as the root element in your activity layout.
